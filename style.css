@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
+#navbar {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#navbar > header {
+    background-color: #2ECC71;
+    color: #ffffff;
+    font-size: 2.4rem;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link {
+    background-color: #2C3E50;
+    border: 1px solid #233240;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.5em 0 0.5em 1.5em;
+    width: 100%;
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.nav-link:hover {
+    background-color: #2ECC71;
+}
+
+
+
+
+code {
+    width: 100%;
+    display: block;
+}
