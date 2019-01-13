@@ -27,7 +27,7 @@
       <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
         language elements such as operators, control structures, and statements. Core JavaScript can be
         extended for a variety of purposes by supplementing it with additional objects; for example:
-        <ul>
+        <ul id="introduction-list">
           <li>Client-side JavaScript extends the core language by supplying objects to control a browser and
             its Document Object Model (DOM). For example, client-side extensions allow an application to
             place elements on an HTML form and respond to user events such as mouse clicks, form input, and
@@ -44,10 +44,13 @@
       <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
         JavaScript code:
         <code>
-          function greetMe(yourName) {
-            alert("Hello " + yourName);
-          }
-          greetMe("World");
+  function greetMe(yourName) {
+
+    alert("Hello " + yourName);
+  
+  }
+  
+  greetMe("World");
         </code>
         Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
       </p>
@@ -92,11 +95,15 @@
         Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to
         execute a statement if the condition is false. An if statement looks as follows:
         <code>
-          if (condition) {
-            statement_1;
-          } else {
-            statement_2;
-          }
+  if (condition) {
+
+    statement_1;
+  
+  } else {
+    
+    statement_2;
+  
+  }
         </code>
         condition can be any expression that evaluates to true or false. See Boolean for an explanation of what
         evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is
@@ -122,11 +129,11 @@
         to always use block statements, especially when nesting if statements:
         <code>
           if (condition) {
-            statement_1_runs_if_condition_is_true;
+statement_1_runs_if_condition_is_true;
             statement_2_runs_if_condition_is_true;
           } else {
             statement_3_runs_if_condition_is_false;
-            statement_4_runs_if_condition_is_false;
+statement_4_runs_if_condition_is_false;
           }
         </code>
       </p>
@@ -134,8 +141,7 @@
         It is advisable to not use simple assignments in a conditional expression, because the assignment can be
         confused with equality when glancing over the code. For example, do not use the following code:
         <code>
-          if (x = y) {
-            /* statements here */
+          if (x = y) { /* statements here */
           }
         </code>
       </p>
