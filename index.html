@@ -112,15 +112,23 @@
       <p>
         You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
         <code>
-          if (condition_1) {
-            statement_1;
-          } else if (condition_2) {
-            statement_2;
-          } else if (condition_n) {
-            statement_n;
-          } else {
-            statement_last;
-          } 
+  if (condition_1) {
+            
+    statement_1;
+
+  } else if (condition_2) {
+    
+    statement_2;
+    
+  } else if (condition_n) {
+  
+    statement_n;
+  
+  } else {
+  
+    statement_last;
+  
+  } 
         </code>
       </p>
       <p>
@@ -128,35 +136,46 @@
         To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice
         to always use block statements, especially when nesting if statements:
         <code>
-          if (condition) {
-statement_1_runs_if_condition_is_true;
-            statement_2_runs_if_condition_is_true;
-          } else {
-            statement_3_runs_if_condition_is_false;
-statement_4_runs_if_condition_is_false;
-          }
+  if (condition) {
+
+    statement_1_runs_if_condition_is_true;
+
+    statement_2_runs_if_condition_is_true;
+
+  } else {
+
+    statement_3_runs_if_condition_is_false;
+
+    statement_4_runs_if_condition_is_false;
+
+  }
         </code>
       </p>
       <p>
         It is advisable to not use simple assignments in a conditional expression, because the assignment can be
         confused with equality when glancing over the code. For example, do not use the following code:
         <code>
-          if (x = y) { /* statements here */
-          }
+  if (x = y) { 
+    
+    /* statements here */
+  
+  }
         </code>
       </p>
       <p>
         If you need to use an assignment in a conditional expression, a common practice is to put additional
         parentheses around the assignment. For example:
         <code>
-          if ((x = y)) {
-            /* statements here */
-          }
+  if ((x = y)) {
+  
+    /* statements here */
+  
+  }
         </code>
       </p>
     </section>
   </main>
-  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
